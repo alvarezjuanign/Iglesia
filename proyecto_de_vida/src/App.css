@@ -1,0 +1,20 @@
+.bible{
+    background-image: url('./assets/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.cross{
+    background-image: url('./assets/cross.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.people{
+    background-image: url('./assets/people.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
