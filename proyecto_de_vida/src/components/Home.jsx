@@ -1,5 +1,5 @@
 import bibleBg from '../assets/header.jpg'
-import crossBg from '../assets/cross.jpg'
+import contactBg from '../assets/cross.jpg'
 import peopleBg from '../assets/people.jpg'
 
 export function Home () {
@@ -10,7 +10,7 @@ export function Home () {
     },
     {
       title: 'Encuentros',
-      bg: crossBg
+      bg: contactBg
     },
     {
       title: 'Contacto',
@@ -19,19 +19,26 @@ export function Home () {
   ]
 
   return (
-    <ul className='h-screen'>
-      {SECTIONS.map((section, i) => (
-        <li
-          key={i}
-          style={{ backgroundImage: `url(${section.bg})` }}
-          className='h-1/3 bg-cover bg-bottom'
-        >
-          <div className='backdrop-blur-sm h-full w-full flex flex-col items-start justify-end'>
-            <h1 className='text-white text-xl font-bold ml-5 mb-5'>{section.title}</h1>
-            <button className='text-white text-sm font-bold ml-5 mb-5'>Ir a ➜</button>
-          </div>
-        </li>
-      ))}
-    </ul>
+    <main>
+      <ul className='h-screen w-full'>
+        {SECTIONS.map((section, i) => (
+          <li
+            key={i}
+            role='button'
+            className='h-1/3
+            overflow-hidden'
+          >
+            <div className='h-full relative transition-all hover:scale-110'>
+              <div className='absolute bg-black opacity-0 w-full h-full flex items-center justify-center transition-all hover:opacity-70'>
+                <h1 className='text-white text-xl font-bold ml-5 mb-5'>{section.title} ➜</h1>
+              </div>
+              <picture>
+                <img src={section.bg} className='h-full w-full' />
+              </picture>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </main>
   )
 }
