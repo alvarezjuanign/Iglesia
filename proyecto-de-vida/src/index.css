@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-    body{
-        background: #282c34;
-    }
+*{
+    font-family: 'Nunito',sans-serif;
 }
