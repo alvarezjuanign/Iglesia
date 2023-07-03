@@ -1,63 +1,74 @@
-import church from './assets/church.svg'
-import phone from './assets/chat.svg'
 import clock from './assets/clock.svg'
 import logo from './assets/logo.png'
 import facebookLogo from './assets/facebook.svg'
 import locationLogo from './assets/location.svg'
+import encuentrosImg from './assets/encuentros.jpg'
 
 export function App () {
   return (
-    <body className='bg-[#edebeb]'>
-      <main className='h-screen' id='home'>
-        <header>
-          <nav className='flex flex-col items-center'>
-            <ul className='w-[95%] mt-2 flex justify-evenly items-center h-16 bg-gray-500/70 gap-8 shadow-lg rounded-md'>
-              <li>
-                <a href='#home' className='flex flex-col justify-center items-center'>
-                  <img src={church} className='h-6' />
-                  <p className='font-extrabold'>Inicio</p>
-                </a>
-              </li>
-              <li>
-                <a href='#contact' className='flex flex-col justify-center items-center'>
-                  <img src={phone} className='h-6' />
-                  <p className='font-extrabold'>Contacto</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <body>
+      <main className='bg-[#edebeb] flex flex-col gap-24 items-center'>
+        <header className='h-1/2 flex flex-col items-center gap-4 pt-14'>
+          <picture>
+            <img
+              src={logo}
+              alt='logo de la iglesia'
+              className='drop-shadow-lg h-32'
+            />
+          </picture>
+          <h1 className='text-center font-bold text-2xl'>Iglesia Proyecto de Vida</h1>
+          <p className='text-center mx-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste perspiciatis vitae atque nobis asperiores! Ad blanditiis itaque suscipit in consectetur vitae. Consectetur voluptatum qui quod nam, quos quas.</p>
+          <button
+            className='border border-[#77C6CD]/60 rounded-lg py-1 px-3 hover:bg-[#77C6CD]/60 transition-all animate-duration-1000 hover:shadow-lg hover:scale-110'
+          >
+            <a
+              href='https://www.facebook.com/jose.zavaleta.169405'
+              className='font-bold'
+            >
+              CONOCENOS!!
+            </a>
+          </button>
         </header>
 
-        <section className='h-screen flex flex-col items-center gap-5 mt-4 '>
-          <img src={logo} alt='logo de la iglesia' className='drop-shadow-lg h-80' />
-          <div className='m-1 animate-fade-right animate-once animate-duration-1000 animate-ease-in-out'>
-            <h3 className='font-semibold text-xl text-center underline m-2 cursor-default'>Virtual</h3>
-            <div>
-              <a href='https://www.facebook.com/jose.zavaleta.169405' className='flex justify-center items-center gap-6 bg-[#77C6CD]/60 rounded-md shadow-lg h-32 p-3'>
-                <div className='flex flex-col items-center p-3'>
-                  <img src={clock} alt='clock' className='h-14' />
-                  <strong>Miércoles</strong>
-                  <p>19:00 hs.</p>
-                </div>
-                <div className='flex flex-col items-center p-3'>
-                  <img src={clock} alt='clock' className='h-14' />
-                  <strong>Viernes</strong>
-                  <p>19:00 hs.</p>
-                </div>
-              </a>
-            </div>
-          </div>
+        <section className='flex flex-col items-center my-11'>
+          <picture>
+            <img
+              src={encuentrosImg}
+              alt='foto de los encuentros en la iglesia'
+              className='h-72 rounded-md'
+            />
+          </picture>
 
-          <div className='animate-fade-left animate-once animate-duration-1000 animate-ease-in-out'>
-            <h3 className='font-semibold text-xl text-center underline m-2 cursor-default'>Presencial</h3>
-            <div className='flex flex-col items-center bg-[#77C6CD]/60 rounded-md shadow-lg h-32 p-3 cursor-default'>
-              <img src={clock} alt='clock' className='h-14' />
-              <strong>Domingo</strong>
-              <p>10:00 hs.</p>
+          <article className='flex justify-center gap-11 m-11'>
+            <div>
+              <h3 className='font-semibold text-lg text-center m-2 cursor-default'>Virtual</h3>
+              <div>
+                <a href='https://www.facebook.com/jose.zavaleta.169405' className='flex justify-center items-center gap-6 bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3'>
+                  <div className='flex flex-col items-center p-3'>
+                    <img src={clock} alt='clock' className='h-14' />
+                    <strong>Miércoles</strong>
+                    <p>19:00 hs.</p>
+                  </div>
+                  <div className='flex flex-col items-center p-3'>
+                    <img src={clock} alt='clock' className='h-14' />
+                    <strong>Viernes</strong>
+                    <p>19:00 hs.</p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
-          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76' className='text-center'>
-            📍<strong className='text-xl hover:underline'>Mercedes 918 - CABA</strong>
+
+            <div>
+              <h3 className='font-semibold text-lg text-center m-2 cursor-default'>Presencial</h3>
+              <div className='flex flex-col items-center bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3 cursor-default'>
+                <img src={clock} alt='clock' className='h-14' />
+                <strong>Domingo</strong>
+                <p>10:00 hs.</p>
+              </div>
+            </div>
+          </article>
+          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'>
+            📍<strong className='text-2xl hover:underline'>Mercedes 918 - CABA</strong>
           </a>
         </section>
       </main>
