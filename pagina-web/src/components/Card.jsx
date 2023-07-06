@@ -1,13 +1,13 @@
-import clockSvg from '../../public/clock.svg'
+import clockSvg from '../../clock.svg'
 
 export function Home () {
   return (
-    <main className='w-screen'>
-      <div className='bg-[#edebeb] flex flex-col gap-24 items-center'>
+    <main className='w-screen bg-[#edebeb]'>
+      <div className='flex flex-col gap-24 items-center'>
         <header className='h-1/2 flex flex-col items-center gap-4 pt-14'>
           <picture>
             <img
-              src='../../public/logo.webp'
+              src='../../logo.webp'
               alt='logo de la iglesia'
               className='drop-shadow-lg h-32'
             />
@@ -29,13 +29,13 @@ export function Home () {
         <section className='flex flex-col items-center my-11'>
           <picture>
             <img
-              src='../../public/encuentros.webp'
+              src='../../encuentros.webp'
               alt='foto de los encuentros en la iglesia'
               className='h-60 rounded-md'
             />
           </picture>
 
-          <article className='flex justify-center gap-10 m-10'>
+          <article className='flex flex-col justify-center gap-10 m-10'>
             <div>
               <h3 className='font-semibold text-lg text-center m-2 cursor-default'>Virtual</h3>
               <div>
@@ -69,10 +69,35 @@ export function Home () {
         </section>
       </div>
 
+      <section className='p-6'>
+        <div className='flex flex-col'>
+          <figure>
+            <img src='../../encuentros.webp' alt='' />
+            <figcaption className='text-center'>Encuentros en la Iglesia</figcaption>
+          </figure>
+          <figure>
+            <img src='../../encuentros.webp' alt='' />
+            <figcaption className='text-center'>Encuentros en la Iglesia</figcaption>
+          </figure>
+          <figure>
+            <img src='../../encuentros.webp' alt='' />
+            <figcaption className='text-center'>Encuentros en la Iglesia</figcaption>
+          </figure>
+          <figure>
+            <img src='../../encuentros.webp' alt='' />
+            <figcaption className='text-center'>Encuentros en la Iglesia</figcaption>
+          </figure>
+          <figure>
+            <img src='../../encuentros.webp' alt='' />
+            <figcaption className='text-center'>Encuentros en la Iglesia</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <footer id='contact' className='bg-gray-500/75 h-28 flex flex-col items-center justify-center gap-3'>
         <div className='flex justify-center gap-4'>
-          <a href='https://www.facebook.com/iglesiadedios.florestanorte'><img src='' alt='ícono de facebook' className='h-6' /></a>
-          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'><img src='' alt='ícono de ubicación' className='h-6' /></a>
+          <a href='https://www.facebook.com/iglesiadedios.florestanorte'><img src='../../facebook.svg' alt='ícono de facebook' className='h-6' /></a>
+          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'><img src='../../location.svg' alt='ícono de ubicación' className='h-6' /></a>
         </div>
         <p className='text-center font-semibold'>©️ 2023. Proyecto de Vida todos los derechos reservados.</p>
       </footer>
