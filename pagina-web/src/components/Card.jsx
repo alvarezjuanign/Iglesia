@@ -1,5 +1,3 @@
-import clockSvg from '../../clock.svg'
-
 export function Home () {
   return (
     <main className='w-full bg-[#edebeb]'>
@@ -15,7 +13,7 @@ export function Home () {
           <h1 className='font-bold text-2xl'>Iglesia Proyecto de Vida</h1>
           <p className='text-center mx-[5%] [text-wrap:balance]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cum iste perspiciatis vitae atque nobis asperiores! Ad blanditiis itaque suscipit in consectetur vitae. Consectetur voluptatum qui quod nam, quos quas.</p>
           <button
-            className='h-14 w-56 border border-[#77C6CD]/60 rounded-full py-1 px-3 absolute bottom-36 bg-[#77C6CD]/60 duration-500 hover:shadow-lg hover:scale-110 active:scale-100'
+            className='h-14 w-56 border border-[#77C6CD]/60 rounded-full py-1 px-3 bg-[#77C6CD]/60 duration-500 hover:shadow-lg hover:scale-110 active:scale-100'
           >
             <a
               href='https://www.facebook.com/jose.zavaleta.169405'
@@ -39,12 +37,12 @@ export function Home () {
               <div>
                 <a href='https://www.facebook.com/jose.zavaleta.169405' className='flex justify-center items-center gap-4 bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3'>
                   <div className='flex flex-col items-center p-3'>
-                    <img src={clockSvg} alt='clock' className='h-12' />
+                    <img src='../../clock.svg' alt='clock' className='h-12' />
                     <strong>Miércoles</strong>
                     <p>19:00 hs.</p>
                   </div>
                   <div className='flex flex-col items-center p-3'>
-                    <img src={clockSvg} alt='clock' className='h-12' />
+                    <img src='../../clock.svg' alt='clock' className='h-12' />
                     <strong>Viernes</strong>
                     <p>19:00 hs.</p>
                   </div>
@@ -55,7 +53,7 @@ export function Home () {
             <div>
               <h3 className='font-semibold text-lg text-center m-2 cursor-default'>Presencial</h3>
               <div className='flex flex-col items-center bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3 cursor-default'>
-                <img src={clockSvg} alt='clock' className='h-12' />
+                <img src='../../clock.svg' alt='clock' className='h-12' />
                 <strong>Domingo</strong>
                 <p>10:00 hs.</p>
               </div>
