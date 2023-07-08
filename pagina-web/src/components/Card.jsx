@@ -1,8 +1,8 @@
 export function Home () {
   return (
     <main className='w-full bg-[#edebeb]'>
-      <div className='flex flex-col gap-1 items-center'>
-        <header className='h-screen flex flex-col items-center justify-center gap-4'>
+      <div className='flex flex-col items-center p-10'>
+        <header className='flex flex-col items-center justify-center gap-4 h-screen'>
           <picture>
             <img
               src='../../logo.webp'
@@ -22,20 +22,17 @@ export function Home () {
               CONOCENOS!!
             </a>
           </button>
+          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'>
+            📍<strong className='text-2xl hover:underline'>Mercedes 918 - CABA</strong>
+          </a>
         </header>
 
         <section className='flex flex-col items-center h-screen'>
-          <div
-            className={"h-72 w-full rounded-md bg-[url('../../encuentros.webp')] bg-cover bg-no-repeat bg-center flex justify-center items-center filter grayscale"}
-          >
-            <h2 className='text-white font-semibold text-4xl'>Encuentros</h2>
-          </div>
-
-          <article className='flex flex-col justify-center gap-5 my-4'>
+          <article className='flex flex-col justify-center gap-5 my-4 md:flex-row'>
             <div>
-              <h3 className='font-semibold text-lg text-center m-2 cursor-default'>Virtual</h3>
+              <h3 className='font-semibold text-lg text-center cursor-default'>Virtual</h3>
               <div>
-                <a href='https://www.facebook.com/jose.zavaleta.169405' className='flex justify-center items-center gap-4 bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3'>
+                <a href='https://www.facebook.com/jose.zavaleta.169405' className='flex justify-center items-center gap-4 bg-[#77C6CD]/50 rounded-md shadow-lg h-32'>
                   <div className='flex flex-col items-center p-3'>
                     <img src='../../clock.svg' alt='clock' className='h-12' />
                     <strong>Miércoles</strong>
@@ -51,7 +48,7 @@ export function Home () {
             </div>
 
             <div>
-              <h3 className='font-semibold text-lg text-center m-2 cursor-default'>Presencial</h3>
+              <h3 className='font-semibold text-lg text-center cursor-default'>Presencial</h3>
               <div className='flex flex-col items-center bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3 cursor-default'>
                 <img src='../../clock.svg' alt='clock' className='h-12' />
                 <strong>Domingo</strong>
@@ -59,9 +56,6 @@ export function Home () {
               </div>
             </div>
           </article>
-          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'>
-            📍<strong className='text-2xl hover:underline'>Mercedes 918 - CABA</strong>
-          </a>
         </section>
       </div>
 
@@ -97,8 +91,12 @@ export function Home () {
 
       <footer id='contact' className='bg-[#77C6CD]/50 h-28 flex flex-col items-center justify-center gap-3'>
         <div className='flex justify-center gap-4'>
-          <a href='https://www.facebook.com/iglesiadedios.florestanorte'><img src='../../facebook.svg' alt='ícono de facebook' className='h-6' /></a>
-          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'><img src='../../location.svg' alt='ícono de ubicación' className='h-6' /></a>
+          <a href='https://www.facebook.com/iglesiadedios.florestanorte'>
+            <img src='../../facebook.svg' alt='ícono de facebook' className='h-6' />
+          </a>
+          <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'>
+            <img src='../../location.svg' alt='ícono de ubicación' className='h-6' />
+          </a>
         </div>
         <p className='text-center font-semibold'>©️ 2023. Proyecto de Vida todos los derechos reservados.</p>
       </footer>
