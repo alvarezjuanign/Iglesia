@@ -1,4 +1,11 @@
 import { About } from './components/About.jsx'
+import logoIglesia from './assets/logo.webp'
+import clock from './assets/clock.svg'
+import jovenes from './assets/jovenes.webp'
+import encuentros from './assets/encuentros.webp'
+import momentos from './assets/momentos.webp'
+import logoLocation from './assets/location.svg'
+import logoFacebook from './assets/facebook.svg'
 
 export function App () {
   return (
@@ -7,7 +14,7 @@ export function App () {
         <header className='flex flex-col items-center justify-center gap-4 h-screen'>
           <picture>
             <img
-              src='./assets/logo.webp'
+              src={logoIglesia}
               alt='logo de la iglesia'
               className='h-32'
             />
@@ -37,12 +44,12 @@ export function App () {
               <div>
                 <a href='https://www.facebook.com/jose.zavaleta.169405' className='flex justify-center items-center gap-4 bg-[#77C6CD]/50 rounded-md shadow-lg h-32'>
                   <div className='flex flex-col items-center p-3'>
-                    <img src='./assets/clock.svg' alt='clock' className='h-12' />
+                    <img src={clock} alt='clock' className='h-12' />
                     <strong>Miércoles</strong>
                     <p>19:00 hs.</p>
                   </div>
                   <div className='flex flex-col items-center p-3'>
-                    <img src='./assets/clock.svg' alt='clock' className='h-12' />
+                    <img src={clock} alt='clock' className='h-12' />
                     <strong>Viernes</strong>
                     <p>19:00 hs.</p>
                   </div>
@@ -53,7 +60,7 @@ export function App () {
             <div>
               <h3 className='font-semibold text-lg text-center cursor-default'>Presencial</h3>
               <div className='flex flex-col items-center bg-[#77C6CD]/50 rounded-md shadow-lg h-32 p-3 cursor-default'>
-                <img src='./assets/clock.svg' alt='clock' className='h-12' />
+                <img src={clock} alt='clock' className='h-12' />
                 <strong>Domingo</strong>
                 <p>10:00 hs.</p>
               </div>
@@ -66,8 +73,8 @@ export function App () {
         animation='animate-fade-right animate-once animate-duration-[2000ms] animate-delay-200 animate-ease-in-out'
       >
         <img
-          src=''
-          alt=''
+          src={jovenes}
+          alt='Los jóvenes de la iglesia'
           className='rounded-md'
         />
         <figcaption className='font-bold text-lg'>'Nuestros jóvenes'</figcaption>
@@ -77,8 +84,8 @@ export function App () {
         animation='animate-fade-left animate-once animate-duration-[2000ms] animate-delay-200 animate-ease-in-out'
       >
         <img
-          src=''
-          alt=''
+          src={encuentros}
+          alt='Encuentros en la iglesia'
           className='rounded-md'
         />
         <figcaption className='font-bold text-lg'>'Encuentros en la Iglesia'</figcaption>
@@ -88,8 +95,8 @@ export function App () {
         animation='animate-fade-right animate-once animate-duration-[2000ms] animate-delay-200 animate-ease-in-out'
       >
         <img
-          src=''
-          alt=''
+          src={momentos}
+          alt='Compartiendo festejos en la iglesia'
           className='rounded-md'
         />
         <figcaption className='font-bold text-lg'>'Compartiendo momentos'</figcaption>
@@ -99,10 +106,10 @@ export function App () {
       <footer id='contact' className='bg-[#77C6CD]/50 h-28 flex flex-col items-center justify-center gap-3'>
         <div className='flex justify-center gap-4'>
           <a href='https://www.facebook.com/iglesiadedios.florestanorte'>
-            <img src='../../facebook.svg' alt='ícono de facebook' className='h-6' />
+            <img src={logoFacebook} alt='ícono de facebook' className='h-6' />
           </a>
           <a href='https://goo.gl/maps/YZrSezH9TQe6Jyy76'>
-            <img src='../../location.svg' alt='ícono de ubicación' className='h-6' />
+            <img src={logoLocation} alt='ícono de ubicación' className='h-6' />
           </a>
         </div>
         <p className='text-center font-semibold'>©️ 2023. Proyecto de Vida todos los derechos reservados.</p>
