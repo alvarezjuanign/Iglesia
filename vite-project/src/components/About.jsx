@@ -7,7 +7,6 @@ export function About ({ children, animation }) {
     <section ref={boxRef} className='p-6 flex flex-col items-center'>
       <figure
         className={isIntersected ? `${animation} flex flex-col items-center m-5` : ''}
-        key='0'
       >
         {children}
       </figure>
